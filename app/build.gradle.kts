@@ -42,18 +42,18 @@ android {
 
 dependencies {
     implementation(projects.domain)
+    implementation(projects.ui.system)
 
-    implementation (Dependencies.core)
-    implementation (Dependencies.appcompat)
-    implementation (Dependencies.material)
-    implementation (Dependencies.constraintLayout)
-    implementation (Dependencies.viewBinding)
-    implementation (Dependencies.navigationFragment)
-    implementation (Dependencies.navigationUi)
-    implementation (Dependencies.viewModel)
-    implementation (Dependencies.viewModelKtx)
+    implementation(Dependencies.core)
+    implementation(Dependencies.appcompat)
+    implementation(Dependencies.constraintLayout)
+    implementation(Dependencies.viewBinding)
+    implementation(Dependencies.navigationFragment)
+    implementation(Dependencies.navigationUi)
+    implementation(Dependencies.viewModel)
+    implementation(Dependencies.viewModelKtx)
 
-    testImplementation (Dependencies.junit)
-    androidTestImplementation (Dependencies.testJunit)
-    androidTestImplementation (Dependencies.testEspresso)
+    testImplementation(Dependencies.junit)
+    androidTestImplementation(Dependencies.testJunit)
+    androidTestImplementation(Dependencies.testEspresso)
 }
