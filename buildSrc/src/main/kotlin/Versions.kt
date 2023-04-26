@@ -6,4 +6,7 @@ object Versions {
     const val JUNIT = "4.13.2"
     const val TEST_JUNIT = "1.1.5"
     const val TEST_ESPRESSO = "3.5.1"
+    const val VIEW_BINDING = "1.5.6"
+    const val NAVIGATION = "2.5.3"
+    const val LIFECYCLE = "2.4.0"
 }

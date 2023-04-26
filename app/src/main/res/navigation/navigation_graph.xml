@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFlowFragment">
+
+    <fragment
+        android:id="@+id/homeFlowFragment"
+        android:name="com.allaber.paper.features.home.HomeFlowFragment"
+        android:label="HomeFlowFragment"
+        tools:layout="@layout/flow_fragment_home" />
+
+    <fragment
+        android:id="@+id/ageFlowFragment"
+        android:name="com.allaber.paper.features.age.AgeFlowFragment"
+        android:label="AgeFlowFragment"
+        tools:layout="@layout/flow_fragment_age" />
+
+    <action
+        android:id="@+id/actionGlobalHomeFlowFragment"
+        app:destination="@id/homeFlowFragment"
+        app:popUpTo="@id/navigation_graph"/>
+
+    <action
+        android:id="@+id/actionGlobalAgeFlowFragment"
+        app:destination="@id/ageFlowFragment"
+        app:popUpTo="@id/homeFlowFragment" />
+</navigation>
