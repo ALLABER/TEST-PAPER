@@ -1,18 +1,15 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
 }
 
 android {
-    namespace = "com.allaber.paper"
+    namespace = "com.allaber.data"
     compileSdk = ConfigData.compileSdkVersion
 
     defaultConfig {
-        applicationId = "com.allaber.paper"
         minSdk = ConfigData.minSdkVersion
         targetSdk = ConfigData.targetSdkVersion
-        versionCode = ConfigData.versionCode
-        versionName = ConfigData.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -38,12 +35,7 @@ android {
 
 dependencies {
     implementation(projects.domain)
-    implementation(projects.data)
 
-    implementation (Dependencies.core)
-    implementation (Dependencies.appcompat)
-    implementation (Dependencies.material)
-    implementation (Dependencies.constraintLayout)
     testImplementation (Dependencies.junit)
     androidTestImplementation (Dependencies.testJunit)
     androidTestImplementation (Dependencies.testEspresso)
