@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">IQ-TEST</string>
+    <string name="text_confirmation">Подтверждение</string>
+    <string name="text_confirm">Подтвердить</string>
+    <string name="text_cancel">Отмена</string>
 </resources>

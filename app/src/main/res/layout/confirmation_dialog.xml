@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/background_16_dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Text.L.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            tools:text="@string/text_confirmation" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/Text.L.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            tools:text="@string/text_confirmation" />
+
+        <Button
+            android:id="@+id/buttonPositive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:maxLines="1"
+            tools:text="@string/text_confirm" />
+
+        <Button
+            android:id="@+id/buttonNegative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="1"
+            tools:text="@string/text_cancel" />
+
+    </LinearLayout>
+</FrameLayout>
