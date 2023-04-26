@@ -36,7 +36,7 @@ android {
 dependencies {
     implementation(projects.domain)
 
-    testImplementation (Dependencies.junit)
-    androidTestImplementation (Dependencies.testJunit)
-    androidTestImplementation (Dependencies.testEspresso)
+    testImplementation(Dependencies.junit)
+    androidTestImplementation(Dependencies.testJunit)
+    androidTestImplementation(Dependencies.testEspresso)
 }
