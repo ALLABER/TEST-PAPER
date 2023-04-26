@@ -8,6 +8,7 @@ import com.allaber.paper.R
 import com.allaber.paper.databinding.FragmentHomeBinding
 import com.allaber.paper.extensions.activityNavController
 import com.allaber.paper.extensions.navigateSafely
+import com.allaber.paper.features.dialogs.ConfirmationDialog
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -26,7 +27,17 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun setupButton() {
         binding.button.setOnClickListener{
-            activityNavController().navigateSafely(R.id.actionGlobalAgeFlowFragment)
+            ConfirmationDialog.createInstance(
+                title = "Title",
+                description = "Description",
+                buttonPositiveText = "Button positive text",
+                buttonNegativeText = "Button negative text",
+                buttonPositiveCallback = {
+                    activityNavController().navigateSafely(R.id.actionGlobalAgeFlowFragment)
+                },
+                buttonNegativeCallback = {
+                }
+            ).show(parentFragmentManager, HomeFragment::class.simpleName)
         }
     }
 }
